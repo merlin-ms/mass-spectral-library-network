@@ -4,4 +4,4 @@ Mass spEctral Library Network (MERLIN) to streamline the generation of public sp
 
 ## Related 
 
-Metadata terms specified in mzSpecLib: (https://hupo-psi.github.io/mzSpecLib/specification/metadata.html)[https://hupo-psi.github.io/mzSpecLib/specification/metadata.html]
+Metadata terms specified in mzSpecLib: <https://hupo-psi.github.io/mzSpecLib/specification/metadata.html>
