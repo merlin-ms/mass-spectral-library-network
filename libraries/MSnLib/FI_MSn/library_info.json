@@ -1,0 +1,192 @@
+{
+  "library": {
+    "name": "MSnLib",
+    "identifier": "MSnLib",
+    "description": "MSn library from multiple compound libraries",
+    "publication": "10.26434/chemrxiv-2024-l1tqh "
+  },
+  "mass_spectrometer": {
+    "description": "Tribrid",
+    "manufacturer": "Thermo Fisher Scientific",
+    "model": "Orbitrap ID-X",
+    "ionization_mode": "HESI",
+    "resolutions": {
+      "MS1": 30000,
+      "MS2": 15000,
+      "MS3": 60000,
+      "MS4": 60000,
+      "MS5": 60000
+    },
+    "fragmentation_types": [
+      "HCD"
+    ]
+  },
+  "sample_introduction": {
+    "method": "dual pump flow injection",
+    "manufacturer": "Thermo Fisher Scientific",
+    "model": "Vanquish Duo UHPLC",
+    "column": {
+      "name": "",
+      "manufacturer": "",
+      "usp_code": "",
+      "length": "",
+      "inner_diameter": "",
+      "particle_size": "",
+      "pore_size": "",
+      "temperature": "",
+      "separation_mode": ""
+    },
+    "mobile_phase": {
+      "gradient": {
+        "mix_type": "isocratic",
+        "flow_type": "constant",
+        "steps": [
+          {
+            "time": 0.0,
+            "flow_rate": 0.055,
+            "flow_rate_unit": "ml/min",
+            "components": [
+              {"id": "A", "percentage": 50},
+              {"id": "B", "percentage": 50}
+            ]
+          }
+        ]
+      },
+      "components": [
+        {
+          "id": "A",
+          "solvents": [
+            {
+              "name": "H2O",
+              "amount": 100,
+              "unit": "percent",
+//              "pH": None
+            },
+            {
+              "name": "formic acid",
+              "amount": 0.1,
+              "unit": "percent",
+//              "pH": None
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "solvents": [
+            {
+              "name": "ACN",
+              "amount": 100,
+              "unit": "percent"
+            },
+            {
+              "name": "formic acid",
+              "amount": 0.1,
+              "unit": "percent"
+            }
+          ]
+        }
+      ]
+    },
+  },
+  "data_repositories": [
+    {
+      "name": "MassIVE",
+      "accession_id": [
+        "MSV000094528"
+      ]
+    },
+    {
+      "name": "Zenodo",
+      "accession_id": [
+        "10.5281/zenodo.10966404",
+        "10.5281/zenodo.10967081",
+        "10.5281/zenodo.10966280"
+      ]
+    }
+  ],
+  "compound_libraries": [
+    {
+      "name": "Bioactive Compound Library +additional",
+      "identifier": "MCEBIO",
+      "distributor": "MedChemExpress",
+      "catalog_number": "HY-L001",
+      "url": "https://www.medchemexpress.com/screening/Bioactive_Compound_Library.html",
+      "description": "",
+      "source": "commercial"
+    },
+    {
+      "name": "5k Scaffold Library",
+      "identifier": "MCESCAF",
+      "distributor": "MedChemExpress",
+      "catalog_number": "HY-L902",
+      "url": "https://www.medchemexpress.com/screening/5k-scaffold-library.html",
+      "description": "",
+      "source": "commercial"
+    },
+    {
+      "name": "NIH NPAC ACONN collection of NPs",
+      "identifier": "NIHNP",
+      "distributor": "NIH/NCATS",
+      "catalog_number": "",
+      "url": "",
+      "description": "",
+      "source": "purified"
+    },
+    {
+      "name": "Alpha-helix Peptidomimetic Library",
+      "identifier": "OTAVAPEP",
+      "distributor": "OTAVAchemicals",
+      "catalog_number": "a-helix-Peptido",
+      "url": "",
+      "description": "",
+      "source": "commercial"
+    },
+    {
+      "name": "Discovery Diversity Set -10",
+      "identifier": "ENAMDISC",
+      "distributor": "Enamine",
+      "catalog_number": "DDS-10",
+      "url": "https://enamine.net/compound-libraries/diversity-libraries/dds-10240",
+      "description": "",
+      "source": "commercial"
+    },
+    {
+      "name": "Carboxylic Acid Fragment Library +additional",
+      "identifier": "ENAMMOL",
+      "distributor": "Enamine and Molport",
+      "catalog_number": "",
+      "url": "",
+      "description": "",
+      "source": "commercial"
+    },
+    {
+      "name": "FDA-Approved Drug Library",
+      "identifier": "MCEDRUG",
+      "distributor": "MedChemExpress",
+      "catalog_number": "HY-L022",
+      "url": "https://www.medchemexpress.com/screening/FDA-approved_Drug_Library.html",
+      "description": "",
+      "source": "commercial"
+    }
+  ],
+  "people": [
+    {
+      "name": "Corinna Brungs",
+      "role": "Method development, data acquisition, library building",
+      "institute": "Institute of Organic Chemistry and Biochemistry of the Czech Academy of Sciences, Prague, Czechia",
+      "contact": "cbrungs1789@gmail.com"
+    },
+    {
+      "name": "Robin Schmid",
+      "role": "Software development, library building",
+      "institute": "Institute of Organic Chemistry and Biochemistry of the Czech Academy of Sciences, Prague, Czechia",
+      "contact": "rschmid1789@gmail.com"
+    },
+    {
+      "name": "Tomáš Pluskal",
+      "role": "Principal Investigator",
+      "institute": "Institute of Organic Chemistry and Biochemistry of the Czech Academy of Sciences, Prague, Czechia",
+      "contact": "tomas.pluskal@uochb.cas.cz"
+    }
+  ]
+}

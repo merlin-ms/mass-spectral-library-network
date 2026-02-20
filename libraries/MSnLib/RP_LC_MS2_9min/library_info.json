@@ -1,0 +1,189 @@
+{
+  "library": {
+    "name": "MSnLib",
+    "identifier": "MSnLib",
+    "description": "RP-LC-MS2 from multiple compound libraries",
+    "publication": ""
+  },
+  "mass_spectrometer": {
+    "description": "Tribrid",
+    "manufacturer": "Thermo Fisher Scientific",
+    "model": "Orbitrap ID-X",
+    "ionization_mode": "HESI",
+    "resolutions": {
+      "MS1": 30000,
+      "MS2": 15000
+    },
+    "fragmentation_types": [
+      "HCD"
+    ]
+  },
+  "sample_introduction": {
+    "method": "RP-LC 9 min",
+    "manufacturer": "Thermo Fisher Scientific",
+    "model": "Vanquish Duo UHPLC",
+    "column": {
+      "name": "Acquity UPLC BEH C18",
+      "manufacturer": "Waters",
+      "usp_code": "L1",
+      "length": "50",
+      "length_unit": "mm",
+      "inner_diameter": "2.1",
+      "innter_diameter_unit": "mm",
+      "particle_size": "1.7",
+      "particle_size_unit": "µm",
+      "pore_size": "130",
+      "pore_size_unit": " Å",
+      "temperature": "40",
+      "separation_mode": "reversed phase"
+    },
+    "mobile_phase": {
+      "gradient": {
+        "mix_type": "gradient",
+        "flow_type": "constant",
+        "steps": [
+          {
+            "time": 0.0,
+            "flow_rate": 0.6,
+            "flow_rate_unit": "ml/min",
+            "components": [
+              {"id": "A", "percentage": 95},
+              {"id": "B", "percentage": 5}
+            ]
+          }
+          {
+            "time": 0.2,
+            "flow_rate": 0.6,
+            "flow_rate_unit": "ml/min",
+            "components": [
+              {"id": "A", "percentage": 95},
+              {"id": "B", "percentage": 5}
+            ]
+          }
+          {
+            "time": 7.2,
+            "flow_rate": 0.6,
+            "flow_rate_unit": "ml/min",
+            "components": [
+              {"id": "A", "percentage": 0},
+              {"id": "B", "percentage": 100}
+            ]
+          }
+          {
+            "time": 8.2,
+            "flow_rate": 0.6,
+            "flow_rate_unit": "ml/min",
+            "components": [
+              {"id": "A", "percentage": 0},
+              {"id": "B", "percentage": 100}
+            ]
+          }
+          {
+            "time": 8.2,
+            "flow_rate": 0.6,
+            "flow_rate_unit": "ml/min",
+            "components": [
+              {"id": "A", "percentage": 95},
+              {"id": "B", "percentage": 5}
+            ]
+          }
+          {
+            "time": 8.7,
+            "flow_rate": 0.6,
+            "flow_rate_unit": "ml/min",
+            "components": [
+              {"id": "A", "percentage": 95},
+              {"id": "B", "percentage": 5}
+            ]
+          }
+        ]
+      },
+      "components": [
+        {
+          "id": "A",
+          "solvents": [
+            {
+              "name": "H2O",
+              "amount": 100,
+              "unit": "percent",
+            },
+            {
+              "name": "formic acid",
+              "amount": 0.1,
+              "unit": "percent",
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "solvents": [
+            {
+              "name": "ACN",
+              "amount": 100,
+              "unit": "percent"
+            },
+            {
+              "name": "formic acid",
+              "amount": 0.1,
+              "unit": "percent"
+            }
+          ]
+        }
+      ]
+    },
+  },
+  "data_repositories": [
+    {
+      "name": "MassIVE",
+      "accession_id": [
+        ""
+      ]
+    },
+    {
+      "name": "Zenodo",
+      "accession_id": [
+        ""
+      ]
+    }
+  ],
+  "compound_libraries": [
+    {
+      "name": "Bioactive Compound Library +additional",
+      "identifier": "MCEBIO",
+      "distributor": "MedChemExpress",
+      "catalog_number": "HY-L001",
+      "url": "https://www.medchemexpress.com/screening/Bioactive_Compound_Library.html",
+      "description": "",
+      "source": "commercial"
+    },
+    {
+      "name": "NIH NPAC ACONN collection of NPs",
+      "identifier": "NIHNP",
+      "distributor": "NIH/NCATS",
+      "catalog_number": "",
+      "url": "",
+      "description": "",
+      "source": "purified"
+    },
+  ],
+  "people": [
+    {
+      "name": "Corinna Brungs",
+      "role": "Method development, data acquisition, library building",
+      "institute": "Institute of Organic Chemistry and Biochemistry of the Czech Academy of Sciences, Prague, Czechia",
+      "contact": "cbrungs1789@gmail.com"
+    },
+    {
+      "name": "Robin Schmid",
+      "role": "Software development, library building",
+      "institute": "Institute of Organic Chemistry and Biochemistry of the Czech Academy of Sciences, Prague, Czechia",
+      "contact": "rschmid1789@gmail.com"
+    },
+    {
+      "name": "Tomáš Pluskal",
+      "role": "Principal Investigator",
+      "institute": "Institute of Organic Chemistry and Biochemistry of the Czech Academy of Sciences, Prague, Czechia",
+      "contact": "tomas.pluskal@uochb.cas.cz"
+    }
+  ]
+}
